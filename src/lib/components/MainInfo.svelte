@@ -27,7 +27,8 @@
                 <br />
                 <span>
                     <i class="bi bi-backpack4 me-2"></i>
-                    MRSU Student
+                    <a href="https://mrsu.ru/en/" target="_blank">MRSU</a>
+                    <span> Student</span>
                 </span>
                 <br />
                 <span>
