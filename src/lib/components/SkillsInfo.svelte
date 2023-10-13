@@ -12,7 +12,7 @@
     import bicepsSvg from "../../icons/biceps.svg";
 </script>
 
-<div class="card my-3">
+<div class="card my-5">
     <div class="card-body d-flex skills-info">
         <h2 class="d-flex align-items-center">
             <img class="biceps me-2" src={bicepsSvg} alt="biceps" />

@@ -14,9 +14,9 @@
     }
 </script>
 
-<div class="card my-3">
+<div class="card my-5">
     <div class="card-body d-flex main-info">
-        <img alt="my-icon" src={assets + "/my-icon.png"} />
+        <img class="icon-img" alt="my-icon" src={assets + "/my-icon.png"} />
         <div class="main-text">
             <h2>Hello, I'm Relative!</h2>
             <p>
@@ -69,6 +69,18 @@
     .soc-links {
         display: flex;
         flex-direction: row;
+    }
+
+    .icon-img {
+        transition: 0.4s;
+    }
+
+    .icon-img:hover {
+        transform: rotate(10deg) translateY(-10px);
+    }
+
+    .icon-img:active {
+        transform: rotate(-10deg) scale(0.8);
     }
 
     @media screen and (max-width: 600px) {
