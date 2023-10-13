@@ -57,12 +57,12 @@
     }
 
     .main-info .main-text {
-        margin-left: 2em;
+        margin-left: 3em;
     }
 
     .main-info img {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         object-fit: cover;
     }
 
