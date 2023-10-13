@@ -1,5 +1,6 @@
 <script>
     import MainInfo from "../lib/components/MainInfo.svelte";
+    import SkillsInfo from "../lib/components/SkillsInfo.svelte";
 
 </script>
 <svelte:head>
@@ -10,4 +11,5 @@
 
 <div class="container mt-5">
     <MainInfo />
+    <SkillsInfo />
 </div>

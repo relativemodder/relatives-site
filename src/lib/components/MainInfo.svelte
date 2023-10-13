@@ -1,14 +1,40 @@
 <script>
     import { assets } from '$app/paths';
     import SocialLink from './SocialLink.svelte';
+
+    function calculateAge(birthDate) {
+        const dateOfBirth = new Date(birthDate);
+        const currentDate = new Date();
+
+        const ageInMilliseconds = currentDate - dateOfBirth;
+
+        const ageInYears = Math.floor(ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25));
+
+        return ageInYears
+    }
 </script>
 
-<div class="card">
+<div class="card my-3">
     <div class="card-body d-flex main-info">
         <img alt="my-icon" src={assets + "/my-icon.png"} />
         <div class="main-text">
             <h2>Hello, I'm Relative!</h2>
-            <p>I'm the programmer, so...</p>
+            <p>
+                <span>
+                    <i class="bi bi-person me-2"></i>
+                    Andrey, { calculateAge("2006-10-23") } y.o.
+                </span>
+                <br />
+                <span>
+                    <i class="bi bi-backpack4 me-2"></i>
+                    MRSU Student
+                </span>
+                <br />
+                <span>
+                    <i class="bi bi-braces me-2"></i>
+                    Full-Stack Dev
+                </span>
+            </p>
 
             <div class="soc-links mt-4">
                 <SocialLink href="https://github.com/relativemodder" icon="github">
